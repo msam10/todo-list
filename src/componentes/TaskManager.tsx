@@ -29,6 +29,7 @@ const TaskManager = () => {
       setLoading(false);
     }
   };
+
   useEffect(() => {
     fetchTask();
   }, []);
@@ -42,7 +43,7 @@ const TaskManager = () => {
       });
       fetchTask();
     } catch (e) {
-      console.error("Error adding task", e);
+      console.error("Error adding task", e);   
     }
     // const newTask = {
     //   id: tasks.length + 1,
